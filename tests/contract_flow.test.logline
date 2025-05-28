@@ -1,0 +1,7 @@
+test "Fluxo de Venda Completo" {
+  simulate user_click "New sale" → params { type:"venda", amount:200 }
+  assert log_contains did:"create_contract"
+  simulate user_click "Approve" → by:"compliance"
+  assert log_status:"valid"
+  simulate user_click "Execute payment"
+}

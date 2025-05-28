@@ -1,0 +1,2 @@
+{"id":"1","tenant":"main","who":"voulezvous","did":"create_contract","this":{"value":1200},"when":"2025-05-28T03:00:00Z","confirmed_by":"dan","if_ok":"execute_payment","if_doubt":"review","if_not":"cancel","status":"pending","valid":true}
+{"id":"2","tenant":"main","who":"voulezvous","did":"send_message","this":{"text":"Olá, FlipApp!"},"when":"2025-05-28T03:01:00Z","confirmed_by":"system","if_ok":"notify","if_doubt":"review","if_not":"ignore","status":"valid","valid":true}

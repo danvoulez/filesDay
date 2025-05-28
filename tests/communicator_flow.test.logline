@@ -1,0 +1,7 @@
+test "Fluxo de Comunicação e LogLine" {
+  simulate user_click "Send message" → params { text:"Olá!" }
+  assert log_contains did:"send_message"
+  simulate user_click "Review"
+  assert log_contains did:"audit_review"
+  simulate user_click "Resolve"
+}

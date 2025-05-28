@@ -1,0 +1,16 @@
+{
+  "id": "upload_file",
+  "who_pattern": "user:*",
+  "did": "upload_file",
+  "required_fields": ["who", "did", "this", "confirmed_by"],
+  "valid_conditions": {
+    "status": "executed",
+    "confirmed_by": "required",
+    "when": "required"
+  },
+  "consequences": {
+    "if_valid": "register_file",
+    "if_not": "notify_pending"
+  },
+  "description": "Registro de upload de arquivo na plataforma"
+}

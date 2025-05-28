@@ -1,0 +1,2 @@
+{"id":"3","tenant":"main","who":"dan","did":"create_invoice_request","this":{"amount":250},"when":"2025-05-28T03:02:00Z","confirmed_by":"voulezvous","if_ok":"execute_payment","if_doubt":"review","if_not":"cancel","status":"pending","valid":true}
+{"id":"4","tenant":"main","who":"dan","did":"send_message","this":{"text":"Pedido de pagamento."},"when":"2025-05-28T03:03:00Z","confirmed_by":"system","if_ok":"notify","if_doubt":"review","if_not":"ignore","status":"valid","valid":true}

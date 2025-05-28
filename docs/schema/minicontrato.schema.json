@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Minicontrato Institucional",
+  "type": "object",
+  "properties": {
+    "who": { "type": "string", "pattern": "^\\w+:\\S+$" },
+    "did": { "type": "string", "maxLength": 255 },
+    "this": { "type": ["string", "object"] },
+    "type": {
+      "type": "string",
+      "description": "Campo semântico inferido exclusivamente por LLM. Nunca preenchido manualmente.",
+      "examples": ["venda", "pesagem", "acesso"],
+      "writeOnly": true
+    },
+    "type_origin": { "type": "string", "description": "Identificador da LLM que atribuiu o type" },
+    "type_timestamp": { "type": "string", "format": "date-time", "description": "Quando o type foi atribuído" }
+  },
+  "required": ["who", "did"]
+}

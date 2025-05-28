@@ -1,0 +1,10 @@
+{
+  "id": "upload_and_log",
+  "steps": [
+    "upload_file",
+    "log_upload"
+  ],
+  "required_roles": ["user"],
+  "max_duration": "30m",
+  "final_conditions": { "status": "executed" }
+}

@@ -1,0 +1,6 @@
+test "Validação e Recuperação de Ghosts" {
+  simulate log_append { valid:false, status:"ghost", did:"create_contract", who:"alice" }
+  assert log_status:"ghost"
+  simulate user_click "Recover"
+  assert log_contains did:"ghost_recovery_failed" OR log_status:"valid"
+}

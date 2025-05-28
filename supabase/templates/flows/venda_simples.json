@@ -1,0 +1,12 @@
+{
+  "id": "venda_simples",
+  "steps": [
+    "iniciar_venda",
+    "selecionar_produto",
+    "efetuar_pagamento",
+    "finalizar_venda"
+  ],
+  "required_roles": ["user", "caixa"],
+  "max_duration": "2h",
+  "final_conditions": { "status": "executed" }
+}

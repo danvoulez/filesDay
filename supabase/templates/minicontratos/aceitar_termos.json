@@ -1,0 +1,18 @@
+{
+  "id": "aceitar_termos",
+  "who_pattern": "user:*|system:admin",
+  "did": "aceitar_termos",
+  "required_fields": ["who", "did", "this", "confirmed_by"],
+  "valid_conditions": {
+    "status": "executed",
+    "confirmed_by": "required",
+    "when": "required"
+  },
+  "consequences": {
+    "if_valid": "liberar_acesso",
+    "if_not": "notificar_pendencia"
+  },
+  "app_namespace": "voulezvous",
+  "tenant_required": true,
+  "description": "Aceite formal de termos institucionais"
+}
